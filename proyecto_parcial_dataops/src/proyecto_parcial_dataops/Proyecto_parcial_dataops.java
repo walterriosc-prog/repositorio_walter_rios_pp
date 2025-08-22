@@ -7,7 +7,7 @@ public class Proyecto_parcial_dataops {
     public static void main(String[] args) {
         // Declaración de variables
         String empleado;
-        double ht, th, sb, d, sn;
+        double ht, th, c, sb, d, sn;
         // Creando el objeto lectura
         Scanner lectura = new Scanner(System.in);
         
@@ -18,11 +18,13 @@ public class Proyecto_parcial_dataops {
         ht = lectura.nextDouble();
         System.out.print("Tarifa por hora: ");
         th = lectura.nextDouble();
+        System.out.print("Comision: ");
+        c = lectura.nextDouble();
         
         // Proceso de datos
         sb = ht * th;
         d = sb * 0.13;
-        sn = sb - d;
+        sn = sb + c - d;
         
         // Salida de datos
         System.out.println("Sueldo Bruto: " + sb);
