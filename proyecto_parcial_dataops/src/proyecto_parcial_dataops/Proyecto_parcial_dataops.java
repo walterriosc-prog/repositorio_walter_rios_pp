@@ -1,5 +1,4 @@
 package proyecto_parcial_dataops;
-
 //Paquete de datos e/s datos por consola
 import java.util.Scanner;
 
@@ -9,7 +8,6 @@ public class Proyecto_parcial_dataops {
         // Declaración de variables
         String empleado;
         double ht, th, sb, d, sn;
-        
         // Creando el objeto lectura
         Scanner lectura = new Scanner(System.in);
         
